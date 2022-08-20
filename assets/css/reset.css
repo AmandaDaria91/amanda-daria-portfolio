@@ -1,0 +1,27 @@
+/* reset box size of all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set parent height for all body elements */
+html {
+    height: 100%
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+}
+
+h1, h2, h3 {
+    font-size: 100%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* default to no bullet points for lists */
+ol, ul {
+    list-style: none;
+}
