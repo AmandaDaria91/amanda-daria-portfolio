@@ -6,13 +6,14 @@
         <meta name="description" content="web developer portfolio">
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Amanda Daria's Portfolio</title>
     </head>
 
     <!-- need to add after learning more about <target="blank" rel=""noreferror noopener"></target> -->
     <body>
         <!-- Header -->
-        <header>
+        <header class="main-header">
             <h1>Amanda Daria Kautzky</h1>
             <nav>
                 <ul>
@@ -38,75 +39,71 @@
         
         <!-- Main content -->
         <main>
-            <section id="about-me">
+            <section id="about-me" class="container">
                 <h2>About Me</h2>
-                <div>
-                    <span>Hello, my name is Amanda and I am pursuing front-end web development. I have experience in HTML, CSS, JavaScript, JAVA, and Python. My dream is to work for a company that I can make a difference at and make a home in. I have previously worked for Amazon, Valve, and Microsoft in non techical roles and made the decision to shift my sights to deep diving computers further than before. I am looking forward to speak with out and please enjoy my portfolio.</span>
-                    <span><img src="assets/images/resized-portfolio.png" alt="A picture of Amanda Daria Kautzky"></span>   
+                <div class="content">
+                    <p>Hello, my name is Amanda and I am pursuing front-end web development. I have experience in HTML, CSS, JavaScript, JAVA, and Python. My dream is to work for a company that I can make a difference at and make a home in. I have previously worked for Amazon, Valve, and Microsoft in non techical roles and made the decision to shift my sights to deep diving computers further than before. I am looking forward to speak with out and please enjoy my portfolio.</p>
+                    <img src="assets/images/resized-portfolio.png" alt="A picture of Amanda Daria Kautzky" width="400" height="275">   
                 </div>
                 <br>
             </section>
             
 
-            <section id="resume">
-                <h2><a href="file/Resume202202100132.pdf">Click here to view my resume</a></h2>
+            <section id="resume" class="container">
+                <!-- added target attribute to open resume in a new page -->
+                <h2><a href="https://drive.google.com/file/d/1NB7J6CUrjXmjcDVPNL5FEj4a4O_0Z7fb/view?usp=sharing" target="_blank">Click here to view my resume</a></h2>
             </section>
             <br>
 
-            <section id="projects">
+            <section id="projects" class="container">
                 <h2>Projects</h2>
-                <div>
+                <div class="content">
                     <a href="https://amandadaria91.github.io/horiseon-code-refactor/" target="_blank">
-                        <img src="assets/images/image-1.png" alt="placeholder img">
+                        <img src="assets/images/horiseon-screenshot-1.jpg" alt="placeholder img" id="feature">
                     </a>
-                </div>
+                    <br>
 
-                <div>
+                    <img src="assets/images/image-1.png" alt="placeholder img">
+
+                    <img src="assets/images/image-1.png" alt="placeholder img">
+
+                    <img src="assets/images/image-1.png" alt="placeholder img">
+
                     <img src="assets/images/image-1.png" alt="placeholder img">
                 </div>
 
-                <div>
-                    <img src="assets/images/image-1.png" alt="placeholder img">
-                </div>
+            </section>
+            <br>
 
-                <div>
-                    <img src="assets/images/image-1.png" alt="placeholder img">
-                </div>
+            <section id="contact-info" class="container">
+                <h2>Contact Info</h2>
+                
+                <div class="content">
+                    <ul>
+                        <!-- mailto: is used for url in order for users to send an email to the specified address -->
+                        <li>
+                            <a href="mailto:amanda.kautzky@gmail.com" target="_blank"><img src="assets/images/gmail-logo.png" alt="Gmail Logo" width="40" height="40"></a>
+                        </li>
 
-                <div>
-                    <img src="assets/images/image-1.png" alt="placeholder img">
-                </div>
+                        <li>
+                            <a href="https://github.com/AmandaDaria91" target="_blank"><img src="assets/images/GitHub-Mark.png" width="40" height="40">
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="https://www.linkedin.com/in/amanda-kautzky-060269112/" target="_blank"><img src="assets/images/640px-LinkedIn_logo_initials.png" width="40" height="40">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
             </section>
             <br>
 
         </main>
 
-        <footer id="contact-info">
-            <h3>Contact Info</h3>
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://www.hotmail.com" target="_blank">Email</a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.google.com" target="_blank">Phone</a>
-                    </li>
-
-                    <li>
-                        <a href="https://github.com/AmandaDaria91" target="_blank">
-                            <img src="assets/images/GitHub-Mark.png" width="40" height="40">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/amanda-kautzky-060269112/" target="_blank">
-                            <img src="assets/images/640px-LinkedIn_logo_initials.png" width="40" height="40">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <footer>
+            Made with much love and thought
         </footer>
 
     </body>
