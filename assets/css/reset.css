@@ -3,17 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    font-size: 24px;
 }
 
 /* set parent height for all body elements */
 html {
-    height: 100%
+    /* viewport height */
+    height: 100vh;
 }
 
 body {
+    /* reference point  */
     min-height: 100%;
     font-family: 'Times New Roman', Times, serif;
-    line-height: 2;
+    line-height: 1;
 }
 
 h1, h2, h3 {
@@ -22,6 +26,6 @@ h1, h2, h3 {
 }
 
 /* default to no bullet points for lists */
-ol, ul {
+ol, ul, li {
     list-style: none;
 }
